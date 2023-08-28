@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href = "styles.css" rel = "stylesheet" type = "text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            @font-face {
+                font-family: Roboto;
+                src: url(fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+            }
+            @font-face {
+                font-family: Roboto-bold;
+                src: url(fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+            }
+            @font-face {
+                font-family: Roboto-light;
+                src: url(fonts/Roboto_Condensed/RobotoCondensed-Light.ttf);
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/5929f0ffef.js" crossorigin="anonymous"></script>
+        <title>SWQ</title> 
+	</head> 
+	<body class="gridContainer"> 
+		<div id="header">
+			<div class="container">
+                <nav id="myNav">
+                    <img src="logos/black.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skillEdu">My Skills</a></li>
+                        <li><a href="#portfolio">My Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" id="closeBtn" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-sharp fa-solid fa-bars" id="openBtn" onclick="openMenu()"></i>
+                </nav>
+                <section class="banner"></section>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I am <span>Wajahat.</span></h1>
+                    <a href="images/myNewCVSWQ.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div> 
+        <!------------------------------------- ABOUT -------------------------------------->
+        <div id="about">
+            <div class="container">
+                <div id="row">
+                    <div class="about-col-1">
+                        <img src="images/gin.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            As an innovative second-year computer science student with a passion for software
+                            development, I bring a strong foundation in coding, problem-solving and technical skills. I have
+                            worked on projects utilizing various programming languages including Java, Python, and C.
+                            With a focus on delivering high-quality and user-friendly software, I am always looking for new
+                            challenges and opportunities to improve my skills. I am confident that I have the skills and drive
+                            to make a valuable contribution to any software development team, and I am eager to bring my
+                            enthusiasm and experience.
+                        </p>
+                    </div>
+                </div>
+                <!------------------------------ SKILLS AND EDUCATION --------------------------------->
+                <div id="skillEdu">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="java">
+                            <h2>Java</h2>
+                            <div class="progress">
+                                <div class="a"></div>
+                            </div>
+                        </div>
+                        <div class="python">
+                            <h2>Python</h2>
+                            <div class="progress">
+                                <div class="b"></div>
+                            </div>
+                        </div>
+                        <div class="html">
+                            <h2>HTML/CSS</h2>
+                            <div class="progress">
+                                <div class="c"></div>
+                            </div>
+                        </div>
+                        <div class="php">
+                            <h2>PHP</h2>
+                            <div class="progress">
+                                <div class="d"></div>
+                            </div>
+                        </div>
+                        <div class="javascript">
+                            <h2>JavaScript</h2>
+                            <div class="progress">
+                                <div class="e"></div>
+                            </div>
+                        </div>
+                        <div class="c-lang">
+                            <h2>C</h2>
+                            <div class="progress">
+                                <div class="f"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="edu">
+                            <h4>2021 - Current</h4>
+                            <h2>Bsc. Computer Science with AI</h2>
+                            <p> 
+                                Northumbria University, Newcastle Upon Tyne <br>
+                                <span style="font-family: Roboto-bold">First Year Grade:</span> Distinction
+                            </p>
+                        </div>
+                        <div class="edu">
+                            <h4>2019 - 2020</h4>
+                            <h2>Bachelor's in Accounting & Finance</h2>
+                            <p> 
+                                SEGi University, Kota Damansara <br>
+                                <span style="font-family: Roboto-bold">First Year Grade:</span> 3.91 CGPA
+                            </p>
+                        </div>
+                        <div class="edu">
+                            <h4>2018 - 2019</h4>
+                            <h2>Foundation in Commerce</h2>
+                            <p> 
+                                SEGi College, Subang Jaya <br>
+                                <span style="font-family: Roboto-bold">Total Grade:</span> 3.86 CGPA
+                            </p>
+                        </div>
+                        <div class="edu">
+                            <h4>2015 - 2017</h4>
+                            <h2>Senior School Certificate (A-Levels)</h2>
+                            <p> 
+                                Delhi Public School, Jeddah <br>
+                                <span style="font-family: Roboto-bold">Total Grade:</span> 66%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <div class="cert">
+                            <h4>2023</h4>
+                            <h2>CS50's Introduction to Programming with Python</h2>
+                            <p> 
+                                HarvardX - Cambridge, Massachusetts <br>
+                            </p>
+                            <a class="view-btn" data-modal-id="myModal" data-image-src="images/CS50P.png" data-image-alt="HarvardX Certificate">VIEW</a>
+                        </div>
+                        <!--
+                        <div class="cert">
+                            <h4>2023</h4>
+                            <h2>Another CERTIFICATE</h2>
+                            <p> 
+                                TESTX - INTO TO TEST <br>
+                            </p>
+                            <a class="view-btn" data-modal-id="myModal" data-image-src="images/bg2.jpg" data-image-alt="TestX Certificate">VIEW</a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img" src="">
+            <div id="caption"></div>
+        </div>
+
+        <!------------------------------------- MY WORK ---------------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work active">
+                        <img src="images/calc.jpg">
+                        <div class="layer">
+                            <h3>Java Calculator</h3>
+                            <p>
+                                A simple calculator built using Java in Apache NetBeans IDE 15.
+                            </p>
+                            <a href="https://github.com/swq1999/java-calculator" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work active">
+                        <img src="images/game.jpg">
+                        <div class="layer">
+                            <h3>Hangman</h3>
+                            <p>
+                                A simple hangman game created using Python in VS Code. 
+                            </p>
+                            <a href="https://github.com/swq1999/hangman-game" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work active">
+                        <img src="images/scale.jpg">
+                        <div class="layer">
+                            <h3>Addition Game</h3>
+                            <p>
+                                I created this as part of an online python course on edX.
+                            </p>
+                            <div class="prnt">
+                                <a href="https://github.com/swq1999/python-calculator" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work active">
+                        <img src="images/pyCalc.jpg">
+                        <div class="layer">
+                            <h3>Python Calculator</h3>
+                            <p>
+                                A simple python calculator with a modern UI.
+                            </p>
+                            <div class="prnt">
+                                <a href="https://github.com/swq1999/python-calculator" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work active">
+                        <img src="images/ip.jpg">
+                        <div class="layer">
+                            <h3>Toy Website</h3>
+                            <p>
+                                I created this for my Web development Module at university.
+                            </p>
+                            <div class="prnt">
+                                <a href="http://unn-w21043564.newnumyspace.co.uk/webTechAssessment/homepage.html" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/swq1999/toy-website" target="_blank"><i class="fa-brands fa-github" id ="git"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work active">
+                        <img src="images/player.jpg">
+                        <div class="layer">
+                            <h3>Music Records Website</h3>
+                            <p>
+                                For Web Programming Module at university. (Basic CSS. Only showcases JavaScript.)
+                            </p>
+                            <div class="prnt">
+                                <a href="http://unn-w21043564.newnumyspace.co.uk/ProgDup/homepage.php" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/swq1999/music-records-website" target="_blank"><i class="fa-brands fa-github" id ="git"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work inactive">
+                        <img src="images/ship.jpg">
+                        <div class="layer">
+                            <h3>In progress...</h3>
+                            <p>
+                                Spaceship landing game in C.
+                            </p>
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="work inactive">
+                        <img src="images/teacher.png">
+                        <div class="layer">
+                            <h3>In progress...</h3>
+                            <p>
+                                AI sign langauge translator in python.
+                            </p>
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#header" class="btn">Back to top</a>
+            </div>
+        </div>
+        <!------------------------------------- CONTACT --------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div id="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-envelope"></i>quadrisyedw@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/swq1999" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/swq17/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <!--<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>-->
+                        </div>
+                        
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Send</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; SWQ <i class="fa-regular fa-gem"></i></p>
+            </div>
+        </div>
+        <!------------------------------------- SCRIPT ---------------------------------------->
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function openTab(tabname)
+            {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <!--SIDE MENU-->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openMenu() {
+                sidemenu.style.right = "0";
+            }
+            function closeMenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+            window.addEventListener('click', function(e){
+                if (!sidemenu.contains(e.target) && (!document.getElementById('openBtn').contains(e.target)))
+                {
+                    sidemenu.style.right = "-200px";
+                }
+            });
+        </script>
+
+        <!--CONTACT FORM-->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyTFMrfQRQfsxWDSlbrTeAG9C_HzYmRfg8vRjntek2IlnL2HpdZRfijE_zoqOoS0B-WVQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+        <!--MODAL SCRIPT-->
+        <script>
+            var viewBtns = document.querySelectorAll(".view-btn");
+          
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+            var caption = document.getElementById("caption");
+            var image = document.getElementById("img");
+          
+            // Attach click event listeners to all view buttons
+            for (var i = 0; i < viewBtns.length; i++) {
+                viewBtns[i].addEventListener("click", function() {
+                image.src = this.getAttribute("data-image-src");
+                caption.innerHTML = this.getAttribute("data-image-alt");
+                modal.style.display = "block";
+              });
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+          
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+		<footer>
+		</footer>
+	</body> 
+</html>
