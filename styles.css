@@ -289,13 +289,13 @@ nav ul li a:hover::after {
 }
 
 /*------education and certificates------*/
-#education, #certificates {
+#education, #experience {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 30px;
     margin-top: 20px;
 }
 
-#education div, #certificates div {
+#education div, #experience div {
     background: #222222;
     padding: 30px 30px;
     font-size: 13px;
@@ -304,28 +304,28 @@ nav ul li a:hover::after {
     transition: background 0.3s, transform 0.3s;
 }
 
-#education div h4, #certificates div h4 {
+#education div h4, #experience div h4 {
     margin-bottom: 10px;
     font-size: 16px;
 }
 
-#education p, #certificates p {
+#education p, #experience p {
     font-size: 15px;
     line-height: 22px;
 }
 
-#education div h2, #certificates div h2 {
+#education div h2, #experience div h2 {
     font-size: 25px;
     margin-bottom: 10px;
     color: #fce44d;
 }
 
-#education div:hover, #certificates div:hover {
+#education div:hover, #experience div:hover {
     background-color: rgb(19, 19, 19);
     transform: translateY(-2px);
 }
 
-#certificates a {
+#education a, #experience a {
     transition: .2s;
     font-weight: bold;
     color: #9c3939;
@@ -334,7 +334,7 @@ nav ul li a:hover::after {
     cursor: pointer;
 }
 
-#certificates a:hover {
+#education a:hover, #experience a:hover {
     transition: .2s;
     font-size: 18px;
     color: #03bd2b;
@@ -742,7 +742,7 @@ nav .fa-sharp {
         margin-top: 40px;
     }
 
-    #skills, #education, #certificates {
+    #skills, #education, #experience {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
