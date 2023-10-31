@@ -264,27 +264,27 @@ nav ul li a:hover::after {
 }
 @keyframes b {
     100% {
-        width: 65%
+        width: 75%
     }
 }
 @keyframes c {
     100% {
-        width: 75%
+        width: 80%
     }
 }
 @keyframes d {
     100% {
-        width: 45%
+        width: 70%
     }
 }
 @keyframes e {
     100% {
-        width: 45%
+        width: 55%
     }
 }
 @keyframes f {
     100% {
-        width: 50%
+        width: 45%
     }
 }
 
