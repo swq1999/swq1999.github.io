@@ -416,7 +416,13 @@
                 }, 5000);
                 form.reset();
             })
-            .catch(error => console.error('Error!', error.message));
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Failed to send message";
+                setTimeout(function(){
+                    msg.innerHTML = ""; 
+                }, 5000);
+            });
             })
         </script>
 
