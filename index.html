@@ -180,16 +180,16 @@
                             </p>
                             
                         </div>
-                        <!--
-                        <div class="cert">
+                        
+                        <!-- <div class="cert">
                             <h4>2023</h4>
                             <h2>Another CERTIFICATE</h2>
                             <p> 
                                 TESTX - INTO TO TEST <br>
                             </p>
                             <a class="view-btn" data-modal-id="myModal" data-image-src="images/bg2.jpg" data-image-alt="TestX Certificate">VIEW</a>
-                        </div>
-                        -->
+                        </div> -->
+                       
                     </div>
                 </div>
             </div>
@@ -404,15 +404,19 @@
           
             form.addEventListener('submit', e => {
               e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
-                        msg.innerHTML = "";
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
+              fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: new FormData(form)
+            })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
             })
         </script>
 
