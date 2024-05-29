@@ -629,9 +629,16 @@ form .btn.btn2:active {
     transform: translateY(1px);
   }
 
-#msg {
+#goodMsg {
     margin: 10px 0 0 2px;
     color: green;
+    display: block;
+    font-size: 16px;
+}
+
+#badMsg {
+    margin: 10px 0 0 2px;
+    color: red;
     display: block;
     font-size: 16px;
 }
