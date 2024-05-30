@@ -259,27 +259,27 @@ nav ul li a:hover::after {
 
 @keyframes a {
     100% {
-        width: 60%
+        width: 65%
     }
 }
 @keyframes b {
     100% {
-        width: 85%
+        width: 75%
     }
 }
 @keyframes c {
     100% {
-        width: 95%
+        width: 85%
     }
 }
 @keyframes d {
     100% {
-        width: 75%
+        width: 65%
     }
 }
 @keyframes e {
     100% {
-        width: 80%
+        width: 75%
     }
 }
 @keyframes f {
