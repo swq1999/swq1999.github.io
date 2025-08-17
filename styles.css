@@ -264,12 +264,12 @@ nav ul li a:hover::after {
 }
 @keyframes b {
     100% {
-        width: 75%
+        width: 95%
     }
 }
 @keyframes c {
     100% {
-        width: 85%
+        width: 90%
     }
 }
 @keyframes d {
@@ -279,12 +279,12 @@ nav ul li a:hover::after {
 }
 @keyframes e {
     100% {
-        width: 75%
+        width: 80%
     }
 }
 @keyframes f {
     100% {
-        width: 45%
+        width: 60%
     }
 }
 
@@ -762,6 +762,8 @@ nav .fa-sharp {
         width: 100%;
     }
 
+    
+
     /* --------- MY WORK ---------- */
     #portfolio {
         padding-top: 35px;
@@ -780,9 +782,6 @@ nav .fa-sharp {
         flex-basis: 100%;
     }
 }
-
-
-
 
 
 /*-------------------------------------------------------------------------------------------------------------*/
